@@ -63,7 +63,7 @@
         opacity: 0.7;
     }
     
-    .header-links, .header-icons
+    .header-links, .header-icons, .header-links:hover, .header-icons:hover
     {
         color: #c1c1c1;
         text-decoration: None;
@@ -307,7 +307,7 @@
         opacity: 0.7;
     }
     
-    .header-links, .header-icons
+    .header-links, .header-icons, .header-links:hover, .header-icons:hover
     {
         color: #c1c1c1;
         text-decoration: None;
