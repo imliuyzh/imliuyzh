@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+  WRITTEN BY: Yizhen Liu
+  EMAIL: yliu2019@uci.edu
+-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Yizhen Liu">
+    <meta name="description" content="The personal website of Yizhen Liu">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Use Github logo as the portfolio favicon since it will be hosted on Github Pages-->
+    <link rel="icon" href="./assets/images/favicon.png" type="image/png">
+
+    <!--Google Font files-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
+    
+    <!--Line Awesome icon files-->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    
+    <!--Custom style file-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Yizhen Liu</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="header-text-info-container">
+        <a href="index.html">
+          <h1 id="homepage-text">Yizhen Liu</h1>
+        </a>
+        <a href="mailto:imliuyzh@outlook.com" class="header-links">
+          <i class="lar la-envelope header-icons" id="header-email-icon" aria-label="E-mail"></i>
+          imliuyzh@outlook.com
+        </a>
+
+        <div id="profile-link-container">
+          <a href="https://github.com/imliuyzh" class="header-links">
+            <i class="lab la-github header-icons" aria-label="Github"></i>
+            Github
+          </a>
+          <a href="https://www.linkedin.com/in/imliuyzh/" class="header-links">
+            <i class="lab la-linkedin-in header-icons" aria-label="LinkedIn"></i>
+            LinkedIn
+          </a>
+          <a href="assets/media/resume.pdf" class="header-links">
+            <i class="lar la-id-badge header-icons" aria-label="Résumé"></i>
+            Résumé
+          </a>
+        </div>
+      </div>
+
+      <a href="assets/images/profile.jpg">
+        <img src="assets/images/profile.jpg" alt="Yizhen Liu's portrait" id="profile-image" />
+      </a>
+    </header>
+
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+    </nav>
+
+    <main id="content">
+      <section class="section" id="projects">
+        <h2>Projects</h2>
+        <div class="entry-container-with-margin project-entry">
+          <h3 class="subsection-title project-title">
+            <a href="https://github.com/imliuyzh/ArdentChat">ArdentChat</a>
+          </h3>
+          <span class="short-info">
+            A real-time messaging application for one-on-one communication between 50 students and staff members
+          </span>
+          <ul>
+            <li class="description-item">Implemented the front-end with React.js which allowed users to send text messages in any length and receive media files such as JPEG, MP4, and PDF</li>
+            <li class="description-item">Built a RESTful API with Node.js and Express.js that returned user information stored by the Atlas MongoDB service</li>
+            <li class="description-item">Maintained the program with Git while adding new features and scaling resource usages</li>
+          </ul>
+          <div class="skills-container">
+            <div class="programming-skill">HTML (JSX)</div>
+            <div class="programming-skill">CSS</div>
+            <div class="programming-skill">JavaScript</div>
+            <div class="programming-skill">Git</div>
+            <div class="programming-skill">MongoDB</div>
+            <div class="programming-skill">React.js</div>
+            <div class="programming-skill">Node.js</div>
+            <div class="programming-skill">Express.js</div>
+          </div>
+        </div>
+        <div class="entry-container-with-margin project-entry">
+          <h3 class="subsection-title project-title">
+            <a href="https://github.com/imliuyzh/WearYourMask">WearYourMask!</a>
+          </h3>
+          <span class="short-info">
+            A small web application inspired by the COVID-19 outbreak to detect masks on the selected image
+          </span>
+          <ul>
+            <li class="description-item">Utilized Tensorflow.js to build a detection module which achieved an 86%+ accuracy rate in classification</li>
+          </ul>
+          <div class="skills-container">
+            <div class="programming-skill">HTML</div>
+            <div class="programming-skill">CSS</div>
+            <div class="programming-skill">JavaScript</div>
+            <div class="programming-skill">Git</div>
+          </div>
+        </div>
+        <div class="entry-container-without-margin project-entry">
+          <h3 class="subsection-title project-title">
+            <a href="https://github.com/imliuyzh/ics-search-engine">ICS Search Engine</a>
+          </h3>
+          <span class="short-info">
+            A search engine written in Python that was able to handle thousands of webpages under a subset of the UCI ICS domain with the query response time below 300ms
+          </span>
+          <ul>
+            <li class="description-item">Ranked the relevance among seven thousand pages in low response time by coding custom cosine similarity algorithm with tf-idf weighting</li>
+            <li class="description-item">Parsed the text within webpages to store them into an inverted index distributed among various small index files</li>
+            <li class="description-item">Constructed the search engine with 3 students in 4 weeks</li>
+          </ul>
+          <div class="skills-container">
+            <div class="programming-skill">Python</div>
+            <div class="programming-skill">Git</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <h2>Education</h2>
+        <div class="entry-container-without-margin">
+          <div class="entry-info-container">
+            <h3 class="subsection-title">University of California, Irvine (UCI)</h3>
+            <p class="short-info">B.S. Computer Science · 3.75/4.00 (Cumulative)</p>
+            <p class="date">Fall 2017 - Spring 2021</p>
+          </div>
+          <img src="assets/images/uci-logo.png" alt="" class="logo" />
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="programming-skill">Python</div>
+          <div class="programming-skill">C/C++</div>
+          <div class="programming-skill">Java</div>
+          <div class="programming-skill">HTML</div>
+          <div class="programming-skill">CSS</div>
+          <div class="programming-skill">JavaScript</div>
+          <div class="programming-skill">SQL</div>
+          <div class="programming-skill">MIPS Assembly</div>
+          <div class="programming-skill">Common Lisp</div>
+          <div class="programming-skill">Prolog</div>
+          <div class="programming-skill">Git</div>
+          <div class="programming-skill">Linux/Unix</div>
+          <div class="programming-skill">MySQL</div>
+          <div class="programming-skill">MongoDB</div>
+          <div class="programming-skill">React.js</div>
+          <div class="programming-skill">Node.js</div>
+          <div class="programming-skill">Express.js</div>
+          <div class="programming-skill">JUnit</div>
+          <div class="communication-skill">Mandarin</div>
+          <div class="communication-skill">Cantonese</div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <h2>Experience</h2>
+        <div class="entry-container-with-margin">
+          <div class="entry-info-container">
+            <h3 class="subsection-title">University of California, Irvine (UCI)</h3>
+            <p class="short-info">Student Lab Tutor · Volunteer</p>
+            <p class="date">Spring 2019 - Spring 2020 | Winter 2021</p>
+            <ul>
+              <li class="description-item">Engaged with more than 100 students on their class assignments through debugging and explaining the control flow of their programs</li>
+              <li class="description-item">Renovated the front-end of Ardent Labs’ website with in-demand industrial web development tools such as React.js and NPM</li>
+              <li class="description-item">Clarified students’ confusion on difficult concepts under 5 minutes on average</li>
+            </ul>
+
+            <p class="short-info">Reader · Seasonal</p>
+            <p class="date">October 2020 - December 2020</p>
+            <ul>
+              <li class="description-item">Created reusable test cases to grade weekly assignments from over 200 students in a week</li>
+              <li class="description-item">Holded meetings over 10 weeks to respond to students' questions on assignment grading</li>
+            </ul>
+
+            <p class="short-info">Project Committee Developer · Volunteer</p>
+            <p class="date">Fall 2019 - Summer 2020</p>
+            <ul>
+              <li class="description-item">Collaborated with over 10 developers on PeterPortal enabling students to view information for over 5000 classes and their grade distribution since Fall 2014</li>
+              <li class="description-item">Reported current status for the assigned team to the head of the project committee during weekly meetings</li>
+              <li class="description-item">Organized several activities enabling students to learn essential development tools like Git</li>
+            </ul>
+          </div>
+
+          <div id="logo-container">
+            <img src="assets/images/uci-logo.png" alt="" class="logo" />
+            <img src="assets/images/icssc-logo.png" alt="" class="logo" />
+          </div>
+        </div>
+        <div class="entry-container-with-margin">
+          <div class="entry-info-container">
+            <h3 class="subsection-title">Ardent Academy for Gifted Youth</h3>
+            <p class="short-info">Software Developer · Internship</p>
+            <p class="date">July 2020 - September 2020</p>
+            <ul>
+              <li class="description-item">Developed a whiteboard application with HTML, CSS, and JavaScript in response for drafting needs among students who enrolled in the math program</li>
+              <li class="description-item">Renovated the front-end of Ardent Labs’ website with in-demand industrial web development tools such as React.js and NPM</li>
+              <li class="description-item">Produced a prototype for an internal messaging application with the MERN stack for individual conversation between students and teaching staff members</li>
+            </ul>
+          </div>
+          <img src="assets/images/ardent-logo.png" alt="" class="logo" />
+        </div>
+      </section>
+
+      <aside>
+        <a href="#" id="jump-to-top">
+          <i class="las la-arrow-circle-up" id="jump-to-top-button" aria-label="Jump to top"></i>
+        </a>
+      </aside>
+    </main>
+
+    <footer>
+      <a href="mailto:imliuyzh@outlook.com">
+        <i class="lar la-envelope" aria-label="E-mail"></i>
+      </a>
+
+      <a href="https://github.com/imliuyzh">
+        <i class="lab la-github" aria-label="Github"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/imliuyzh/">
+        <i class="lab la-linkedin-in" aria-label="LinkedIn"></i>
+      </a>
+
+      <a href="assets/media/resume.pdf">
+        <i class="lar la-id-badge" aria-label="Résumé"></i>
+      </a>
+    </footer>
+  </body>
+</html>

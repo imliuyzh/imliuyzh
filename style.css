@@ -1,0 +1,563 @@
+@font-face
+{
+    font-family: "Selawik";
+    src: url(./assets/fonts/selawk.woff);
+}
+
+@font-face
+{
+    font-family: "Selawik Semibold";
+    src: url(./assets/fonts/selawksb.woff);
+}
+
+@font-face
+{
+    font-family: "Selawik Semilight";
+    src: url(./assets/fonts/selawksl.woff);
+}
+
+@media screen and (min-width: 960px) and (min-height: 480px)
+{
+    body
+    {
+        margin: 8rem auto;
+        font-family: "Selawik", "Segoe UI", sans-serif;
+        width: 750px;
+    }
+    
+    a
+    {
+        color: #14213d;
+        text-decoration: None;
+        transition: color 0.5s;
+    }
+    
+    a:hover
+    {
+        color: #cecece;
+    }
+    
+    header
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 36px;
+    }
+    
+    #homepage-text
+    {
+        margin: 0 0 12px;
+        letter-spacing: -2px;
+        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+        font-size: 52px;
+    }
+    
+    #profile-image
+    {
+        width: 100%;
+        transition: 1s;
+    }
+    
+    #profile-image:hover
+    {
+        opacity: 0.7;
+    }
+    
+    .header-links, .header-icons
+    {
+        color: #c1c1c1;
+        text-decoration: None;
+        vertical-align: middle;
+        font-size: 16px;
+    }
+    
+    .header-icons
+    {
+        font-size: 18px;
+    }
+    
+    #profile-link-container
+    {
+        margin: 112px 0 0;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 12px;
+    }
+    
+    nav
+    {
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    
+    nav > a
+    {
+        margin: 18px 54px;
+        color: #4b5563;
+        text-decoration: None;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        transition: color 0.5s;
+    }
+    
+    #content
+    {
+        margin: 24px 0;
+    }
+    
+    #content h2
+    {
+        margin-bottom: 6px;
+        color: #c1c1c1;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    
+    section
+    {
+        margin: 56px 0;
+    }
+    
+    .entry-container-without-margin
+    {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+    
+    .entry-container-with-margin
+    {
+        margin: 0 0 28px;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+    
+    .project-entry
+    {
+        grid-template-columns: 1fr;
+    }
+    
+    .subsection-title
+    {
+        margin: 0;
+        letter-spacing: -0.5px;
+        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+        font-size: 24px;
+    }
+    
+    .project-title
+    {
+        margin-bottom: 6px;
+    }
+    
+    .short-info, .date
+    {
+        margin: 16px 0;
+        color: #a8a8a8;
+        line-height: 6px;
+        font-family: "Selawik Semilight", "Segoe UI", sans-serif;
+        font-size: 14px;
+    }
+    
+    span.short-info
+    {
+        margin: 0;
+        line-height: 24px;
+    }
+    
+    .description-item
+    {
+        line-height: 28px;
+    }
+    
+    .logo
+    {
+        width: 100%;
+    }
+    
+    .skills-container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    #projects .skills-container
+    {
+        margin: 8px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    .programming-skill
+    {
+        padding: 8px 16px;
+        background-color: #f09703;
+        color: #ffffff;
+        border-radius: 10px;
+        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+        font-size: 14px;
+    }
+    
+    #projects .programming-skill
+    {
+        padding: 8px;
+        background-color: #ffd900;
+        color: #14213d;
+        border-radius: 10px;
+        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+        font-size: 14px;
+    }
+    
+    .communication-skill
+    {
+        padding: 8px 16px;
+        background-color: #e5e5e5;
+        color: #14213d;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    #logo-container
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+    
+    footer
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+        padding: 2rem 2rem 0;
+        border-top: 1px solid #e5e5e5;
+    }
+    
+    footer *
+    {
+        color: #e5e5e5;
+        transition: color 1s;
+        font-size: 28px;
+    }
+    
+    footer *:hover
+    {
+        color: #14213d;
+    }
+    
+    #jump-to-top
+    {
+        position: fixed;
+        bottom: 10%;
+        right: 8%;
+        color: #14213d;
+        transition: color 0.3s;
+        text-decoration: None;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #jump-to-top:hover
+    {
+        color: #cecece;
+    }
+    
+    #jump-to-top-button
+    {
+        font-size: 54px;
+    }
+}
+
+@media screen and (max-width: 959px), (max-height: 479px)
+{
+    body
+    {
+        margin: 0 0 3rem;
+        text-align: center;
+        font-family: "Selawik", "Segoe UI", sans-serif;
+    }
+    
+    a
+    {
+        color: #14213d;
+        text-decoration: None;
+        transition: color 0.5s;
+    }
+    
+    a:hover
+    {
+        color: #cecece;
+    }
+    
+    header
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header-text-info-container
+    {
+        margin: 72px auto 0;
+        order: 1;
+    }
+    
+    #homepage-text
+    {
+        margin: 0 0 12px;
+        letter-spacing: -2px;
+        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+        font-size: 52px;
+    }
+    
+    #profile-image
+    {
+        order: 0;
+        width: 100%;
+        transition: 1s;
+    }
+    
+    #profile-image:hover
+    {
+        opacity: 0.7;
+    }
+    
+    .header-links, .header-icons
+    {
+        color: #c1c1c1;
+        text-decoration: None;
+        vertical-align: middle;
+        font-size: 16px;
+    }
+    
+    .header-icons
+    {
+        font-size: 18px;
+    }
+    
+    #profile-link-container
+    {
+        margin: 54px auto ;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 16px;
+    }
+    
+    nav
+    {
+        margin: 64px auto 0;
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    
+    nav > a
+    {
+        margin: 18px 54px;
+        color: #4b5563;
+        text-decoration: None;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        transition: color 0.5s;
+    }
+    
+    #content
+    {
+        margin: 24px 0;
+    }
+    
+    #content h2
+    {
+        margin-bottom: 6px;
+        color: #c1c1c1;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    
+    section
+    {
+        margin: 56px auto 0;
+        width: 88%;
+    }
+    
+    .entry-container-without-margin
+    {
+        margin: 14px auto;
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .entry-info-container
+    {
+        margin: 24px 0 0;
+        order: 1;
+    }
+    
+    .entry-container-with-margin
+    {
+        margin: 0 auto 28px;
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project-entry
+    {
+        margin: auto auto 52px;
+    }
+    
+    .subsection-title
+    {
+        margin: 0;
+        letter-spacing: -0.5px;
+        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+        font-size: 24px;
+    }
+    
+    .project-title
+    {
+        margin-bottom: 6px;
+    }
+    
+    .short-info, .date
+    {
+        color: #a8a8a8;
+        line-height: 12px;
+        font-family: "Selawik Semilight", "Segoe UI", sans-serif;
+        font-size: 14px;
+    }
+    
+    span.short-info
+    {
+        line-height: 24px;
+    }
+    
+    .description-item
+    {
+        text-align: left;
+        line-height: 28px;
+    }
+    
+    .logo
+    {
+        order: 0;
+        width: 100%;
+    }
+    
+    .skills-container
+    {
+        margin: 14px 0 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    #projects .skills-container
+    {
+        margin: 8px auto 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    .programming-skill
+    {
+        padding: 8px 16px;
+        background-color: #f09703;
+        color: #ffffff;
+        border-radius: 10px;
+        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+        font-size: 14px;
+    }
+    
+    #projects .programming-skill
+    {
+        padding: 8px;
+        background-color: #ffd900;
+        color: #14213d;
+        border-radius: 10px;
+        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+        font-size: 14px;
+    }
+    
+    .communication-skill
+    {
+        padding: 8px 16px;
+        background-color: #e5e5e5;
+        color: #14213d;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    #logo-container
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+    
+    footer
+    {
+        margin: auto;
+        width: 88%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+        padding: 2rem 0 0;
+        border-top: 1px solid #e5e5e5;
+    }
+    
+    footer *
+    {
+        color: #e5e5e5;
+        transition: color 1s;
+        font-size: 28px;
+    }
+    
+    footer *:hover
+    {
+        color: #14213d;
+    }
+    
+    #jump-to-top
+    {
+        position: fixed;
+        bottom: 10%;
+        right: 8%;
+        color: #14213d;
+        transition: color 0.3s;
+        text-decoration: None;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #jump-to-top:hover
+    {
+        color: #cecece;
+    }
+    
+    #jump-to-top-button
+    {
+        font-size: 48px;
+    }
+}
