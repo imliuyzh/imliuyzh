@@ -144,7 +144,7 @@
     
     .subsection-title
     {
-        margin: 0;
+        margin: 0 0 8px;
         letter-spacing: -0.5px;
         font-family: "Selawik Semibold", "Segoe UI", sans-serif;
         font-size: 24px;
@@ -157,17 +157,11 @@
     
     .short-info, .date
     {
-        margin: 16px 0;
+        margin: 0;
         color: #a8a8a8;
-        line-height: 6px;
+        line-height: 24px;
         font-family: "Selawik Semilight", "Segoe UI", sans-serif;
         font-size: 14px;
-    }
-    
-    span.short-info
-    {
-        margin: 0;
-        line-height: 24px;
     }
     
     .description-item
@@ -187,29 +181,11 @@
         gap: 16px;
     }
     
-    #projects .skills-container
-    {
-        margin: 8px 0 0;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-    }
-    
     .programming-skill
     {
         padding: 8px 16px;
-        background-color: #f09703;
+        background-color: #f5d20a;
         color: #ffffff;
-        border-radius: 10px;
-        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
-        font-size: 14px;
-    }
-    
-    #projects .programming-skill
-    {
-        padding: 8px;
-        background-color: #ffd900;
-        color: #14213d;
         border-radius: 10px;
         font-family: "Selawik Semibold", "Segoe UI", sans-serif;
         font-size: 14px;
@@ -346,7 +322,7 @@
     
     #profile-link-container
     {
-        margin: 54px auto ;
+        margin: 72px auto;
         display: grid;
         grid-template-rows: repeat(3, 1fr);
         gap: 16px;
@@ -365,7 +341,7 @@
     
     nav > a
     {
-        margin: 18px 54px;
+        margin: 14px 54px;
         color: #4b5563;
         text-decoration: None;
         font-family: "Noto Sans", sans-serif;
@@ -423,7 +399,7 @@
     
     .subsection-title
     {
-        margin: 0;
+        margin: 0 auto 10px;
         letter-spacing: -0.5px;
         font-family: "Selawik Semibold", "Segoe UI", sans-serif;
         font-size: 24px;
@@ -436,15 +412,11 @@
     
     .short-info, .date
     {
+        margin: auto;
         color: #a8a8a8;
-        line-height: 12px;
+        line-height: 24px;
         font-family: "Selawik Semilight", "Segoe UI", sans-serif;
         font-size: 14px;
-    }
-    
-    span.short-info
-    {
-        line-height: 24px;
     }
     
     .description-item
@@ -455,8 +427,9 @@
     
     .logo
     {
+        margin: auto;
         order: 0;
-        width: 100%;
+        width: 55%;
     }
     
     .skills-container
@@ -468,30 +441,11 @@
         gap: 16px;
     }
     
-    #projects .skills-container
-    {
-        margin: 8px auto 0;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 16px;
-    }
-    
     .programming-skill
     {
         padding: 8px 16px;
-        background-color: #f09703;
+        background-color: #f5d20a;
         color: #ffffff;
-        border-radius: 10px;
-        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
-        font-size: 14px;
-    }
-    
-    #projects .programming-skill
-    {
-        padding: 8px;
-        background-color: #ffd900;
-        color: #14213d;
         border-radius: 10px;
         font-family: "Selawik Semibold", "Segoe UI", sans-serif;
         font-size: 14px;
