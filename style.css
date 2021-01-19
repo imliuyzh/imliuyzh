@@ -1,3 +1,4 @@
+/* Selawik font files */
 @font-face
 {
     font-family: "Selawik";
@@ -16,6 +17,9 @@
     src: url(./assets/fonts/selawksl.woff);
 }
 
+
+
+/* Styling for devices with resolution above or equal to 960x480 */
 @media screen and (min-width: 960px) and (min-height: 480px)
 {
     body
@@ -254,6 +258,7 @@
     }
 }
 
+/* Styling for devices with width lower than 960 or height lower than 480 */
 @media screen and (max-width: 959px), (max-height: 479px)
 {
     body
