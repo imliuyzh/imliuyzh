@@ -19,7 +19,7 @@
 
 
 
-/* Styling for devices with viewport width at least 960px */
+/* Styling for devices with viewport width at least 960px. */
 @media (min-width: 960px)
 {
     body
@@ -258,7 +258,8 @@
     }
 }
 
-/* Styling for devices with viewport width at most 959px */
+/* Styling for devices with viewport width at most 959px. This is a workaround for a
+Windows-specific @media issue when the viewport width is at exactly 959px. */
 @media not all and (min-width: 960px)
 {
     body
