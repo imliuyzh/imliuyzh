@@ -31,14 +31,14 @@
     
     a
     {
-        color: #14213d;
+        color: #d1d5da;
         text-decoration: None;
         transition: color 0.5s;
     }
     
     a:hover
     {
-        color: #cecece;
+        color: #6a737d;
     }
     
     header
@@ -51,9 +51,16 @@
     #homepage-text
     {
         margin: 0 0 12px;
+        color: #14213d;
         letter-spacing: -2px;
         font-family: "Selawik Semibold", "Segoe UI", sans-serif;
         font-size: 52px;
+        transition: color 0.5s;
+    }
+    
+    #homepage-text:hover
+    {
+        color: #6a737d;
     }
     
     #profile-image
@@ -67,25 +74,20 @@
         opacity: 0.7;
     }
     
-    .header-links, .header-icons, .header-links:hover, .header-icons:hover
-    {
-        color: #c1c1c1;
-        text-decoration: None;
-        vertical-align: middle;
-        font-size: 16px;
-    }
-    
-    .header-icons
-    {
-        font-size: 18px;
-    }
-    
     #profile-link-container
     {
         margin: 112px 0 0;
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         gap: 12px;
+        text-decoration: None;
+        vertical-align: middle;
+        font-size: 16px;
+    }
+
+    .header-icons
+    {
+        font-size: 18px;
     }
     
     nav
@@ -149,14 +151,20 @@
     .subsection-title
     {
         margin: 0 0 8px;
+        color: #14213d;
         letter-spacing: -0.5px;
         font-family: "Selawik Semibold", "Segoe UI", sans-serif;
         font-size: 24px;
     }
     
-    .project-title
+    .subsection-title a
     {
-        margin-bottom: 6px;
+        color: #14213d;
+    }
+    
+    .subsection-title a:hover
+    {
+        color: #6a737d;
     }
     
     .short-info, .date
@@ -224,14 +232,14 @@
     
     footer *
     {
-        color: #e5e5e5;
+        color: #d1d5da;
         transition: color 1s;
         font-size: 28px;
     }
     
     footer *:hover
     {
-        color: #14213d;
+        color: #6a737d;
     }
     
     #jump-to-top
@@ -271,14 +279,14 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     
     a
     {
-        color: #14213d;
+        color: #d1d5da;
         text-decoration: None;
         transition: color 0.5s;
     }
     
     a:hover
     {
-        color: #cecece;
+        color: #6a737d;
     }
     
     header
@@ -296,9 +304,16 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     #homepage-text
     {
         margin: 0 0 12px;
+        color: #14213d;
         letter-spacing: -2px;
         font-family: "Selawik Semibold", "Segoe UI", sans-serif;
         font-size: 52px;
+        transition: color 0.5s;
+    }
+
+    #homepage-text:hover
+    {
+        color: #6a737d;
     }
     
     #profile-image
@@ -313,9 +328,12 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
         opacity: 0.7;
     }
     
-    .header-links, .header-icons, .header-links:hover, .header-icons:hover
+    #profile-link-container
     {
-        color: #c1c1c1;
+        margin: 112px 0 0;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 12px;
         text-decoration: None;
         vertical-align: middle;
         font-size: 16px;
@@ -324,14 +342,6 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     .header-icons
     {
         font-size: 18px;
-    }
-    
-    #profile-link-container
-    {
-        margin: 72px auto;
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        gap: 16px;
     }
     
     nav
@@ -406,9 +416,20 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     .subsection-title
     {
         margin: 0 auto 10px;
+        color: #14213d;
         letter-spacing: -0.5px;
         font-family: "Selawik Semibold", "Segoe UI", sans-serif;
         font-size: 24px;
+    }
+    
+    .subsection-title a
+    {
+        color: #14213d;
+    }
+    
+    .subsection-title a:hover
+    {
+        color: #6a737d;
     }
     
     .project-title
@@ -488,14 +509,14 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     
     footer *
     {
-        color: #e5e5e5;
+        color: #d1d5da;
         transition: color 1s;
         font-size: 28px;
     }
     
     footer *:hover
     {
-        color: #14213d;
+        color: #6a737d;
     }
     
     #jump-to-top
