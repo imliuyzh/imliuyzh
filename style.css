@@ -17,6 +17,12 @@
     src: url(./assets/fonts/selawksl.woff);
 }
 
+@font-face
+{
+    font-family: "Noto Sans";
+    src: url(./assets/fonts/notosansl.woff);
+}
+
 
 
 /* Styling for devices with viewport width at least 960px. */
