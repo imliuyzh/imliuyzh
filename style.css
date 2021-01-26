@@ -112,7 +112,6 @@
         text-decoration: None;
         font-family: "Noto Sans", sans-serif;
         font-size: 15px;
-        font-weight: 500;
         transition: color 0.5s;
     }
     
@@ -368,7 +367,6 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
         text-decoration: None;
         font-family: "Noto Sans", sans-serif;
         font-size: 15px;
-        font-weight: 500;
         transition: color 0.5s;
     }
     
