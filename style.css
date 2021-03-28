@@ -256,24 +256,26 @@ html, body
     #jump-to-top
     {
         position: fixed;
-        bottom: 10%;
+        bottom: 16%;
         right: 8%;
-        color: #14213d;
+        background-color: rgba(20, 33, 61, 0.9);
         transition: color 0.3s;
         text-decoration: None;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 12px;
     }
     
     #jump-to-top:hover
     {
-        color: #cecece;
+        background-color: rgba(20, 33, 61, 0.6);
     }
     
     #jump-to-top-button
     {
-        font-size: 54px;
+        color: #ffffff;
+        font-size: 24px;
     }
 }
 
@@ -534,21 +536,23 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
         position: fixed;
         bottom: 10%;
         right: 8%;
-        color: #14213d;
+        background-color: rgba(20, 33, 61, 0.9);
         transition: color 0.3s;
         text-decoration: None;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 12px;
     }
     
     #jump-to-top:hover
     {
-        color: #cecece;
+        background-color: rgba(20, 33, 61, 0.6);
     }
     
     #jump-to-top-button
     {
-        font-size: 48px;
+        color: #ffffff;
+        font-size: 24px;
     }
 }
