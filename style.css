@@ -26,7 +26,7 @@
 
 
 /* Add smooth scrolling for the page. */
-body 
+html, body 
 {
     scroll-behavior: smooth;
 }
