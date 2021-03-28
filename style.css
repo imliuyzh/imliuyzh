@@ -25,6 +25,12 @@
 
 
 
+/* Add smooth scrolling for the page. */
+body 
+{
+    scroll-behavior: smooth;
+}
+
 /* Styling for devices with viewport width at least 960px. */
 @media (min-width: 960px)
 {
