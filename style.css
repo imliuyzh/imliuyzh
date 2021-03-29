@@ -259,7 +259,7 @@ html, body
         bottom: 16%;
         right: 8%;
         background-color: rgba(20, 33, 61, 0.9);
-        transition: color 0.3s;
+        transition: all 0.3s;
         text-decoration: None;
         display: flex;
         flex-direction: column;
@@ -537,7 +537,7 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
         bottom: 10%;
         right: 8%;
         background-color: rgba(20, 33, 61, 0.9);
-        transition: color 0.3s;
+        transition: all 0.3s;
         text-decoration: None;
         display: flex;
         flex-direction: column;
