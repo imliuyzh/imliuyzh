@@ -5,5 +5,5 @@ During my internship at Ardent Academy, I produced a prototype for an internal m
 
 I would like to have an opportunity to be an employee in your company. It is a rare chance for me to put my various development skills in practical use. If you have questions about my work, then you can reach me via my e-mail or phone. It is best to contact me through my e-mail address. Thank you for your consideration for this position.  
 
-![Yizhen's GitHub Stats](https://github-readme-stats.vercel.app/api?username=imliuyzh&count_private=true&show_icons=true)
-[![Yizhen's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=imliuyzh&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+![Statistics](https://github-readme-stats.vercel.app/api?username=imliuyzh&count_private=true&show_icons=true)
+[![Programming Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=imliuyzh&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
