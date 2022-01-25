@@ -46,7 +46,7 @@ html, body
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #6a737d;
+    background: #a1a2a4;
 }
 
 /* Styling for devices with viewport width at least 960px. */
