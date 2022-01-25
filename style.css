@@ -28,7 +28,25 @@
 /* Add smooth scrolling for the page. */
 html, body 
 {
+    scrollbar-color: #b9b9b9 transparent;
+    scrollbar-width: thin;
     scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b9b9b9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #616161; 
 }
 
 /* Styling for devices with viewport width at least 960px. */
