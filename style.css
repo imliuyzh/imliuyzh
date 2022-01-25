@@ -25,7 +25,7 @@
 
 
 
-/* Add smooth scrolling for the page. */
+/* Add smooth scrolling as well as scrollbar styling to the page. */
 html, body 
 {
     scrollbar-color: #b9b9b9 transparent;
