@@ -54,8 +54,8 @@ html, body
 {
     body
     {
-        margin: 8rem auto;
         font-family: "Selawik", "Segoe UI", sans-serif;
+        margin: 8rem auto;
         width: 750px;
     }
     
@@ -74,17 +74,17 @@ html, body
     header
     {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         gap: 36px;
+        grid-template-columns: repeat(2, 1fr);
     }
     
     #homepage-text
     {
-        margin: 0 0 12px;
         color: #14213d;
-        letter-spacing: -2px;
         font-family: "Selawik Semibold", "Segoe UI", sans-serif;
         font-size: 52px;
+        letter-spacing: -2px;
+        margin: 0 0 12px;
         transition: color 0.5s;
     }
     
@@ -95,8 +95,8 @@ html, body
     
     #profile-image
     {
-        width: 100%;
         transition: 1s;
+        width: 100%;
     }
     
     #profile-image:hover
@@ -106,13 +106,13 @@ html, body
     
     #profile-link-container
     {
-        margin: 112px 0 0;
         display: grid;
-        grid-template-rows: repeat(4, 1fr);
+        font-size: 16px;
         gap: 12px;
+        grid-template-rows: repeat(4, 1fr);
+        margin: 112px 0 0;
         text-decoration: None;
         vertical-align: middle;
-        font-size: 16px;
     }
 
     .header-icons
@@ -122,20 +122,20 @@ html, body
     
     nav
     {
-        margin-top: 64px;
+        border-bottom: 1px solid #e5e5e5;
+        border-top: 1px solid #e5e5e5;
         display: flex;
         justify-content: space-between;
-        border-top: 1px solid #e5e5e5;
-        border-bottom: 1px solid #e5e5e5;
+        margin-top: 64px;
     }
     
     nav > a
     {
-        margin: 18px 54px;
         color: #4b5563;
-        text-decoration: None;
         font-family: "Noto Sans", sans-serif;
         font-size: 15px;
+        margin: 18px 54px;
+        text-decoration: None;
         transition: color 0.5s;
     }
     
@@ -146,11 +146,11 @@ html, body
     
     #content h2
     {
-        margin-bottom: 6px;
         color: #c1c1c1;
         font-family: "Noto Sans", sans-serif;
         font-size: 12px;
         font-weight: 300;
+        margin-bottom: 6px;
     }
     
     section
@@ -160,16 +160,16 @@ html, body
     
     .entry-container-without-margin
     {
-        margin: 0;
         display: grid;
         grid-template-columns: 4fr 1fr;
+        margin: 0;
     }
     
     .entry-container-with-margin
     {
-        margin: 0 0 28px;
         display: grid;
         grid-template-columns: 4fr 1fr;
+        margin: 0 0 28px;
     }
     
     .project-entry
@@ -179,11 +179,11 @@ html, body
     
     .subsection-title
     {
-        margin: 0 0 8px;
         color: #14213d;
-        letter-spacing: -0.5px;
         font-family: "Selawik Semibold", "Segoe UI", sans-serif;
         font-size: 24px;
+        letter-spacing: -0.5px;
+        margin: 0 0 8px;   
     }
     
     .subsection-title a
@@ -198,11 +198,11 @@ html, body
     
     .short-info, .date
     {
-        margin: 0;
         color: #a8a8a8;
-        line-height: 24px;
         font-family: "Selawik Semilight", "Segoe UI", sans-serif;
         font-size: 14px;
+        line-height: 24px;
+        margin: 0;   
     }
     
     .description-item
@@ -224,22 +224,22 @@ html, body
     
     .programming-skill
     {
-        padding: 10px 20px;
-        background-color: #f6fa1b;
-        color: #000000;
-        border-radius: 12px;
+        background-color: #f5d20a;
+        border-radius: 10px;
+        color: #ffffff;
         font-family: "Selawik Semibold", "Segoe UI", sans-serif;
         font-size: 14px;
+        padding: 10px 20px;
     }
     
     .communication-skill
     {
-        padding: 8px 16px;
         background-color: #e5e5e5;
-        color: #14213d;
         border-radius: 10px;
+        color: #14213d;
         font-size: 14px;
         font-weight: 600;
+        padding: 8px 16px;
     }
 
     #logo-container
@@ -251,19 +251,19 @@ html, body
     
     footer
     {
-        display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 36px;
-        padding: 2rem 2rem 0;
         border-top: 1px solid #e5e5e5;
+        display: flex;
+        gap: 36px;
+        justify-content: center;
+        padding: 2rem 2rem 0;
     }
     
     footer *
     {
         color: #d1d5da;
-        transition: color 1s;
         font-size: 28px;
+        transition: color 1s;
     }
     
     footer *:hover
@@ -273,16 +273,16 @@ html, body
     
     #jump-to-top
     {
-        position: fixed;
-        bottom: 16%;
-        right: 8%;
         background-color: rgba(20, 33, 61, 0.9);
-        transition: all 0.3s;
-        text-decoration: None;
+        bottom: 16%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 12px;
+        position: fixed;
+        right: 8%;
+        text-decoration: None;
+        transition: all 0.3s;
     }
     
     #jump-to-top:hover
@@ -303,9 +303,9 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
 {
     body
     {
+        font-family: "Selawik", "Segoe UI", sans-serif;
         margin: 0 0 3rem;
         text-align: center;
-        font-family: "Selawik", "Segoe UI", sans-serif;
     }
     
     a
@@ -334,11 +334,11 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     
     #homepage-text
     {
-        margin: 0 0 12px;
         color: #14213d;
-        letter-spacing: -2px;
         font-family: "Selawik Semibold", "Segoe UI", sans-serif;
         font-size: 52px;
+        letter-spacing: -2px;
+        margin: 0 0 12px;   
         transition: color 0.5s;
     }
 
@@ -350,8 +350,8 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     #profile-image
     {
         order: 0;
-        width: 100%;
         transition: 1s;
+        width: 100%;
     }
     
     #profile-image:hover
@@ -361,13 +361,13 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     
     #profile-link-container
     {
-        margin: 112px 0 0;
         display: grid;
-        grid-template-rows: repeat(4, 1fr);
+        font-size: 16px;
         gap: 12px;
+        grid-template-rows: repeat(4, 1fr);
+        margin: 112px 0 0;
         text-decoration: None;
         vertical-align: middle;
-        font-size: 16px;
     }
     
     .header-icons
@@ -377,22 +377,22 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     
     nav
     {
-        margin: 64px auto 0;
-        width: 88%;
+        border-bottom: 1px solid #e5e5e5;
+        border-top: 1px solid #e5e5e5;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border-top: 1px solid #e5e5e5;
-        border-bottom: 1px solid #e5e5e5;
+        margin: 64px auto 0;
+        width: 88%;
     }
     
     nav > a
     {
-        margin: 14px 54px;
         color: #4b5563;
-        text-decoration: None;
         font-family: "Noto Sans", sans-serif;
         font-size: 15px;
+        margin: 14px 54px;
+        text-decoration: None;
         transition: color 0.5s;
     }
     
@@ -403,11 +403,11 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     
     #content h2
     {
-        margin-bottom: 6px;
         color: #c1c1c1;
         font-family: "Noto Sans", sans-serif;
         font-size: 12px;
         font-weight: 300;
+        margin-bottom: 6px;
     }
     
     section
@@ -418,10 +418,10 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     
     .entry-container-without-margin
     {
-        margin: 14px auto;
-        width: 88%;
         display: flex;
         flex-direction: column;
+        margin: 14px auto;
+        width: 88%;
     }
 
     .entry-info-container
@@ -432,10 +432,10 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     
     .entry-container-with-margin
     {
-        margin: 0 auto 28px;
-        width: 88%;
         display: flex;
         flex-direction: column;
+        margin: 0 auto 28px;
+        width: 88%;
     }
     
     .project-entry
@@ -445,11 +445,11 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     
     .subsection-title
     {
-        margin: 0 auto 10px;
         color: #14213d;
-        letter-spacing: -0.5px;
         font-family: "Selawik Semibold", "Segoe UI", sans-serif;
         font-size: 24px;
+        letter-spacing: -0.5px;
+        margin: 0 auto 10px;   
     }
     
     .subsection-title a
@@ -469,17 +469,17 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     
     .short-info, .date
     {
-        margin: auto;
         color: #a8a8a8;
-        line-height: 24px;
         font-family: "Selawik Semilight", "Segoe UI", sans-serif;
         font-size: 14px;
+        line-height: 24px;
+        margin: auto;   
     }
     
     .description-item
     {
-        text-align: left;
         line-height: 28px;
+        text-align: left;
     }
     
     .logo
@@ -491,31 +491,31 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     
     .skills-container
     {
-        margin: 14px 0 0;
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
-        gap: 16px;
+        gap: 10px;
+        justify-content: center;
+        margin: 14px 0 0;   
     }
     
     .programming-skill
     {
-        padding: 8px 16px;
         background-color: #f5d20a;
-        color: #ffffff;
         border-radius: 10px;
+        color: #ffffff;
         font-family: "Selawik Semibold", "Segoe UI", sans-serif;
         font-size: 14px;
+        padding: 8px 16px;
     }
     
     .communication-skill
     {
-        padding: 8px 16px;
         background-color: #e5e5e5;
-        color: #14213d;
         border-radius: 10px;
+        color: #14213d;
         font-size: 14px;
         font-weight: 600;
+        padding: 8px 16px;
     }
 
     #logo-container
@@ -527,21 +527,21 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     
     footer
     {
-        margin: auto;
-        width: 88%;
-        display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 36px;
-        padding: 2rem 0 0;
         border-top: 1px solid #e5e5e5;
+        display: flex;
+        gap: 36px;
+        justify-content: center;
+        margin: auto;
+        padding: 2rem 0 0;
+        width: 88%;
     }
     
     footer *
     {
         color: #d1d5da;
-        transition: color 1s;
         font-size: 28px;
+        transition: color 1s;
     }
     
     footer *:hover
@@ -551,16 +551,16 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     
     #jump-to-top
     {
-        position: fixed;
-        bottom: 10%;
-        right: 8%;
         background-color: rgba(20, 33, 61, 0.9);
-        transition: all 0.3s;
-        text-decoration: None;
+        bottom: 10%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 12px;
+        position: fixed;
+        right: 8%;
+        text-decoration: None;
+        transition: all 0.3s;
     }
     
     #jump-to-top:hover
