@@ -28,6 +28,7 @@
 /* Add smooth scrolling as well as scrollbar styling to the page. */
 html, body 
 {
+    font-family: "Selawik", "Segoe UI", sans-serif;
     scrollbar-color: rgba(209, 213, 218, 0.6) transparent;
     scrollbar-width: thin;
     scroll-behavior: smooth;
@@ -244,7 +245,6 @@ footer *:hover
 {
     body
     {
-        font-family: "Selawik", "Segoe UI", sans-serif;
         margin: 8rem auto;
         width: 750px;
     }
@@ -320,7 +320,6 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
 {
     body
     {
-        font-family: "Selawik", "Segoe UI", sans-serif;
         margin: 0 0 3rem;
         text-align: center;
     }
