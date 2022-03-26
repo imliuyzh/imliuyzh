@@ -49,6 +49,196 @@ html, body
     background: #a1a2a4;
 }
 
+/* Common styles */
+a
+{
+    color: #d1d5da;
+    text-decoration: None;
+    transition: color 0.5s;
+}
+
+a:hover
+{
+    color: #6a737d;
+}
+
+#homepage-text
+{
+    color: #14213d;
+    font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+    font-size: 52px;
+    letter-spacing: -2px;
+    margin: 0 0 12px;   
+    transition: color 0.5s;
+}
+
+#homepage-text:hover
+{
+    color: #6a737d;
+}
+
+#profile-image
+{
+    transition: 1s;
+    width: 100%;
+}
+
+#profile-image:hover
+{
+    opacity: 0.7;
+}
+
+#profile-link-container
+{
+    display: grid;
+    font-size: 16px;
+    gap: 12px;
+    grid-template-rows: repeat(4, 1fr);
+    margin: 112px 0 0;
+    text-decoration: None;
+    vertical-align: middle;
+}
+
+.header-icons
+{
+    font-size: 18px;
+}
+
+nav > a
+{
+    color: #4b5563;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 15px;
+    margin: 18px 54px;
+    text-decoration: None;
+    transition: color 0.5s;
+}
+
+#content
+{
+    margin: 24px 0;
+}
+
+#content h2
+{
+    color: #c1c1c1;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 6px;
+}
+
+.subsection-title
+{
+    color: #14213d;
+    font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+}
+
+.subsection-title a
+{
+    color: #14213d;
+}
+
+.subsection-title a:hover
+{
+    color: #6a737d;
+}
+
+.short-info, .date
+{
+    color: #a8a8a8;
+    font-family: "Selawik Semilight", "Segoe UI", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.description-item
+{
+    line-height: 28px;
+}
+
+.skills-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.programming-skill
+{
+    background-color: #f5d20a;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+    font-size: 14px;
+}
+
+.communication-skill
+{
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    color: #14213d;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+}
+
+.logo-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+footer
+{
+    align-items: center;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    margin: 0;
+    padding: 2rem 2rem 0;
+}
+
+footer *
+{
+    color: #d1d5da;
+    font-size: 28px;
+    transition: color 1s;
+}
+
+footer *:hover
+{
+    color: #6a737d;
+}
+
+#jump-to-top
+{
+    background-color: rgba(20, 33, 61, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    position: fixed;
+    right: 8%;
+    text-decoration: None;
+    transition: all 0.3s;
+}
+
+#jump-to-top:hover
+{
+    background-color: rgba(20, 33, 61, 0.6);
+}
+
+#jump-to-top-button
+{
+    color: #ffffff;
+    font-size: 24px;
+}
+
 /* Styling for devices with viewport width at least 960px. */
 @media (min-width: 960px)
 {
@@ -59,65 +249,11 @@ html, body
         width: 750px;
     }
     
-    a
-    {
-        color: #d1d5da;
-        text-decoration: None;
-        transition: color 0.5s;
-    }
-    
-    a:hover
-    {
-        color: #6a737d;
-    }
-    
     header
     {
         display: grid;
         gap: 36px;
         grid-template-columns: repeat(2, 1fr);
-    }
-    
-    #homepage-text
-    {
-        color: #14213d;
-        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
-        font-size: 52px;
-        letter-spacing: -2px;
-        margin: 0 0 12px;
-        transition: color 0.5s;
-    }
-    
-    #homepage-text:hover
-    {
-        color: #6a737d;
-    }
-    
-    #profile-image
-    {
-        transition: 1s;
-        width: 100%;
-    }
-    
-    #profile-image:hover
-    {
-        opacity: 0.7;
-    }
-    
-    #profile-link-container
-    {
-        display: grid;
-        font-size: 16px;
-        gap: 12px;
-        grid-template-rows: repeat(4, 1fr);
-        margin: 112px 0 0;
-        text-decoration: None;
-        vertical-align: middle;
-    }
-
-    .header-icons
-    {
-        font-size: 18px;
     }
     
     nav
@@ -129,85 +265,37 @@ html, body
         margin-top: 64px;
     }
     
-    nav > a
-    {
-        color: #4b5563;
-        font-family: "Noto Sans", sans-serif;
-        font-size: 15px;
-        margin: 18px 54px;
-        text-decoration: None;
-        transition: color 0.5s;
-    }
-    
-    #content
-    {
-        margin: 24px 0;
-    }
-    
-    #content h2
-    {
-        color: #c1c1c1;
-        font-family: "Noto Sans", sans-serif;
-        font-size: 12px;
-        font-weight: 300;
-        margin-bottom: 6px;
-    }
-    
     section
     {
         margin: 56px 0;
     }
-    
-    .entry-container-without-margin
-    {
-        display: grid;
-        grid-template-columns: 4fr 1fr;
-        margin: 0;
-    }
-    
-    .entry-container-with-margin
+
+    .entries > .entry
     {
         display: grid;
         grid-template-columns: 4fr 1fr;
         margin: 0 0 28px;
     }
-    
-    .project-entry
+
+    .entries > .project-entry
     {
         grid-template-columns: 1fr;
     }
     
+    .entries .entry:last-child
+    {
+        display: grid;
+        margin: 0;
+    }
+    
     .subsection-title
     {
-        color: #14213d;
-        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
-        font-size: 24px;
-        letter-spacing: -0.5px;
-        margin: 0 0 8px;   
-    }
-    
-    .subsection-title a
-    {
-        color: #14213d;
-    }
-    
-    .subsection-title a:hover
-    {
-        color: #6a737d;
+        margin: 0 0 8px;
     }
     
     .short-info, .date
     {
-        color: #a8a8a8;
-        font-family: "Selawik Semilight", "Segoe UI", sans-serif;
-        font-size: 14px;
-        line-height: 24px;
-        margin: 0;   
-    }
-    
-    .description-item
-    {
-        line-height: 28px;
+        margin: 0;
     }
     
     .logo
@@ -215,85 +303,14 @@ html, body
         width: 100%;
     }
     
-    .skills-container
-    {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    
     .programming-skill
     {
-        background-color: #f5d20a;
-        border-radius: 10px;
-        color: #ffffff;
-        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
-        font-size: 14px;
         padding: 10px 20px;
-    }
-    
-    .communication-skill
-    {
-        background-color: #e5e5e5;
-        border-radius: 10px;
-        color: #14213d;
-        font-size: 14px;
-        font-weight: 600;
-        padding: 8px 16px;
-    }
-
-    .logo-container
-    {
-        display: flex;
-        flex-direction: column;
-        gap: 28px;
-    }
-    
-    footer
-    {
-        align-items: center;
-        border-top: 1px solid #e5e5e5;
-        display: flex;
-        gap: 36px;
-        justify-content: center;
-        padding: 2rem 2rem 0;
-    }
-    
-    footer *
-    {
-        color: #d1d5da;
-        font-size: 28px;
-        transition: color 1s;
-    }
-    
-    footer *:hover
-    {
-        color: #6a737d;
     }
     
     #jump-to-top
     {
-        background-color: rgba(20, 33, 61, 0.9);
         bottom: 16%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 12px;
-        position: fixed;
-        right: 8%;
-        text-decoration: None;
-        transition: all 0.3s;
-    }
-    
-    #jump-to-top:hover
-    {
-        background-color: rgba(20, 33, 61, 0.6);
-    }
-    
-    #jump-to-top-button
-    {
-        color: #ffffff;
-        font-size: 24px;
     }
 }
 
@@ -308,18 +325,6 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
         text-align: center;
     }
     
-    a
-    {
-        color: #d1d5da;
-        text-decoration: None;
-        transition: color 0.5s;
-    }
-    
-    a:hover
-    {
-        color: #6a737d;
-    }
-    
     header
     {
         display: flex;
@@ -332,47 +337,9 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
         order: 1;
     }
     
-    #homepage-text
-    {
-        color: #14213d;
-        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
-        font-size: 52px;
-        letter-spacing: -2px;
-        margin: 0 0 12px;   
-        transition: color 0.5s;
-    }
-
-    #homepage-text:hover
-    {
-        color: #6a737d;
-    }
-    
     #profile-image
     {
         order: 0;
-        transition: 1s;
-        width: 100%;
-    }
-    
-    #profile-image:hover
-    {
-        opacity: 0.7;
-    }
-    
-    #profile-link-container
-    {
-        display: grid;
-        font-size: 16px;
-        gap: 12px;
-        grid-template-rows: repeat(4, 1fr);
-        margin: 112px 0 0;
-        text-decoration: None;
-        vertical-align: middle;
-    }
-    
-    .header-icons
-    {
-        font-size: 18px;
     }
     
     nav
@@ -386,37 +353,21 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
         width: 88%;
     }
     
-    nav > a
-    {
-        color: #4b5563;
-        font-family: "Noto Sans", sans-serif;
-        font-size: 15px;
-        margin: 14px 54px;
-        text-decoration: None;
-        transition: color 0.5s;
-    }
-    
-    #content
-    {
-        margin: 24px 0;
-    }
-    
-    #content h2
-    {
-        color: #c1c1c1;
-        font-family: "Noto Sans", sans-serif;
-        font-size: 12px;
-        font-weight: 300;
-        margin-bottom: 6px;
-    }
-    
     section
     {
         margin: 56px auto 0;
         width: 88%;
     }
-    
-    .entry-container-without-margin
+
+    .entries > .entry
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 14px auto 28px;
+        width: 88%;
+    }
+
+    .entries .entry:last-child
     {
         display: flex;
         flex-direction: column;
@@ -430,14 +381,6 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
         order: 1;
     }
     
-    .entry-container-with-margin
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto 28px;
-        width: 88%;
-    }
-    
     .project-entry
     {
         margin: auto auto 52px;
@@ -445,21 +388,7 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     
     .subsection-title
     {
-        color: #14213d;
-        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
-        font-size: 24px;
-        letter-spacing: -0.5px;
         margin: 0 auto 10px;   
-    }
-    
-    .subsection-title a
-    {
-        color: #14213d;
-    }
-    
-    .subsection-title a:hover
-    {
-        color: #6a737d;
     }
     
     .project-title
@@ -469,16 +398,11 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     
     .short-info, .date
     {
-        color: #a8a8a8;
-        font-family: "Selawik Semilight", "Segoe UI", sans-serif;
-        font-size: 14px;
-        line-height: 24px;
         margin: auto;   
     }
     
     .description-item
     {
-        line-height: 28px;
         text-align: left;
     }
     
@@ -491,86 +415,22 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     
     .skills-container
     {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
         justify-content: center;
         margin: 14px 0 0;   
     }
     
     .programming-skill
     {
-        background-color: #f5d20a;
-        border-radius: 10px;
-        color: #ffffff;
-        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
-        font-size: 14px;
         padding: 8px 16px;
-    }
-    
-    .communication-skill
-    {
-        background-color: #e5e5e5;
-        border-radius: 10px;
-        color: #14213d;
-        font-size: 14px;
-        font-weight: 600;
-        padding: 8px 16px;
-    }
-
-    .logo-container
-    {
-        display: flex;
-        flex-direction: column;
-        gap: 28px;
     }
     
     footer
     {
-        align-items: center;
-        border-top: 1px solid #e5e5e5;
-        display: flex;
-        gap: 36px;
-        justify-content: center;
         margin: auto;
-        padding: 2rem 0 0;
-        width: 88%;
-    }
-    
-    footer *
-    {
-        color: #d1d5da;
-        font-size: 28px;
-        transition: color 1s;
-    }
-    
-    footer *:hover
-    {
-        color: #6a737d;
     }
     
     #jump-to-top
     {
-        background-color: rgba(20, 33, 61, 0.9);
         bottom: 10%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 12px;
-        position: fixed;
-        right: 8%;
-        text-decoration: None;
-        transition: all 0.3s;
-    }
-    
-    #jump-to-top:hover
-    {
-        background-color: rgba(20, 33, 61, 0.6);
-    }
-    
-    #jump-to-top-button
-    {
-        color: #ffffff;
-        font-size: 24px;
     }
 }
