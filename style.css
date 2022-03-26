@@ -1,6 +1,12 @@
 /* Font files */
 @font-face
 {
+    font-family: "Noto Sans";
+    src: url(./assets/fonts/notosansl.woff);
+}
+
+@font-face
+{
     font-family: "Selawik";
     src: url(./assets/fonts/selawk.woff);
 }
@@ -17,21 +23,15 @@
     src: url(./assets/fonts/selawksl.woff);
 }
 
-@font-face
-{
-    font-family: "Noto Sans";
-    src: url(./assets/fonts/notosansl.woff);
-}
-
 
 
 /* Add smooth scrolling as well as scrollbar styling to the page. */
 html, body 
 {
     font-family: "Selawik", "Segoe UI", sans-serif;
+    scroll-behavior: smooth;
     scrollbar-color: rgba(209, 213, 218, 0.6) transparent;
     scrollbar-width: thin;
-    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
