@@ -242,7 +242,7 @@ html, body
         padding: 8px 16px;
     }
 
-    #logo-container
+    .logo-container
     {
         display: flex;
         flex-direction: column;
@@ -486,7 +486,7 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
     {
         margin: auto;
         order: 0;
-        width: 55%;
+        width: 35%;
     }
     
     .skills-container
@@ -518,7 +518,7 @@ Windows-specific @media issue when the viewport width is at exactly 959px. */
         padding: 8px 16px;
     }
 
-    #logo-container
+    .logo-container
     {
         display: flex;
         flex-direction: column;
