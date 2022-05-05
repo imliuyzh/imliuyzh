@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -21,233 +21,266 @@
   <body>
     <header>
       <div id="header-text-info-container">
-        <a href="index.html">
+        <a href="index.html" title="Home">
           <h1 id="homepage-text">Yizhen Liu</h1>
         </a>
-        <a href="mailto:imliuyzh@outlook.com" class="header-links">
+        <a href="mailto:imliuyzh@outlook.com" class="header-links" title="Email">
           <span class="lar la-envelope header-icons" id="header-email-icon" aria-hidden="true"></span>
           imliuyzh@outlook.com
         </a>
 
         <div id="profile-link-container">
-          <a href="https://github.com/imliuyzh" class="header-links">
+          <a href="https://github.com/imliuyzh" class="header-links" title="GitHub">
             <span class="lab la-github header-icons" aria-hidden="true"></span>
             Github
           </a>
-          <a href="https://www.linkedin.com/in/yizhenliu/" class="header-links">
+          <a href="https://www.linkedin.com/in/yizhenliu/" class="header-links" title="LinkedIn">
             <span class="lab la-linkedin-in header-icons" aria-hidden="true"></span>
             LinkedIn
           </a>
-          <a href="assets/media/resume.pdf" class="header-links">
+          <a href="assets/media/resume.pdf" class="header-links" title="Résumé">
             <span class="lar la-id-badge header-icons" aria-hidden="true"></span>
             Résumé
           </a>
         </div>
       </div>
 
-      <a href="assets/images/profile.jpg">
+      <a href="assets/images/profile.jpg" title="Portrait">
         <img src="assets/images/profile.jpg" alt="Yizhen Liu's portrait" id="profile-image" />
       </a>
     </header>
 
     <nav>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
+      <a href="#projects" title="Projects">Projects</a>
+      <a href="#education" title="Education">Education</a>
+      <a href="#skills" title="Skills">Skills</a>
+      <a href="#experience" title="Experience">Experience</a>
     </nav>
 
     <main id="content">
       <section class="section" id="projects">
         <h2>Projects</h2>
-        <div class="entry-container-with-margin project-entry">
-          <h3 class="subsection-title project-title">
-            <a href="https://github.com/imliuyzh/ArdentChat">ArdentChat</a>
-          </h3>
-          <p class="short-info">
-            A real-time messaging application for one-on-one communication between 50 students and staff members
-          </p>
-          <ul>
-            <li class="description-item">Implemented the front-end with React.js which allowed users to send text messages and receive media files such as JPEG, MP4, and PDF</li>
-            <li class="description-item">Built a RESTful API with Node.js and Express.js that returned user information stored by the Atlas MongoDB service</li>
-            <li class="description-item">Utilized Socket.IO to enable full-duplex instant messaging between two parties of the 
-communication</li>
-          </ul>
-        </div>
-        <div class="entry-container-with-margin project-entry">
-          <h3 class="subsection-title project-title">
-            <a href="https://ibb.co/mcQyhNr">Fabflix</a>
-          </h3>
-          <p class="short-info">
-            A Java EE web application with high scalability allowing customers to search and purchase over 20,000 
-movies with the response time under 500ms
-          </p>
-          <ul>
-            <li class="description-item">Synchronized the data between master and slave databases while creating two load 
-balancers to distribute the network traffic and reduce the response time from above 400ms 
-to 100-200ms</li>
-            <li class="description-item">Expanded the search functionality with full-text & fuzzy search, and autocomplete with
-client-side caching while keeping the endpoint’s response time around 80ms</li>
-            <li class="description-item">Optimized data processing time from 25 minutes to 3 minutes for parsing 3 large XML files 
-totaling more than 70,000 entries with another team member using batch insert and a hash 
-table for caching purposes</li>
-          </ul>
-        </div>
-        <div class="entry-container-with-margin project-entry">
-          <h3 class="subsection-title project-title">
-            <a href="https://www.antcatalog.com">AntCatalog</a>
-          </h3>
-          <p class="short-info">
-            A website enabling students in the University of California, Irvine to gain analytic insights on graduate courses starting from Fall 2013
-          </p>
-          <ul>
-            <li class="description-item">Applied the compression middleware to reduce the size of the largest payload from 5mb to 411kb</li>
-            <li class="description-item">Performed stress testing with Locust to ensure the durability of data as well as well as the service</li>
-            <li class="description-item">Programmed the rate limiting mechanism to allow maximum of 5 requests per second from the same source</li>
-            <li class="description-item">Configured the caching mechanism on the server to return the response under 100ms given the same request had been issued</li>
-          </ul>
-        </div>
-        <div class="entry-container-without-margin project-entry">
-          <h3 class="subsection-title project-title">
-            <a href="https://github.com/imliuyzh/ics-search-engine">ICS Search Engine</a>
-          </h3>
-          <p class="short-info">
-            A search engine written in Python that was able to handle thousands of webpages under a subset of the UCI ICS domain with the query response time below 300ms
-          </p>
-          <ul>
-            <li class="description-item">Ranked the relevance among seven thousand pages in low response time by coding custom cosine similarity algorithm with tf-idf weighting</li>
-            <li class="description-item">Parsed the text within webpages to store them into an inverted index distributed among various small index files</li>
-            <li class="description-item">Constructed the search engine with 3 students in 4 weeks</li>
-          </ul>
+        <div class="entries">
+          <div class="entry project-entry">
+            <h3 class="subsection-title project-title">
+              <a href="https://github.com/imliuyzh/ArdentChat" title="ArdentChat">ArdentChat</a>
+            </h3>
+            <p class="short-info">
+              A real-time messaging application for one-on-one communication between 50 students and staff members
+            </p>
+            <ul>
+              <li class="description-item">Implemented the front-end with React.js which allowed users to send text messages and receive media files such as JPEG, MP4, and PDF</li>
+              <li class="description-item">Built a RESTful API with Node.js and Express.js that returned user information stored by the Atlas MongoDB service</li>
+              <li class="description-item">Utilized Socket.IO to enable full-duplex instant messaging between two parties of the communication</li>
+            </ul>
+          </div>
+          <div class="entry project-entry">
+            <h3 class="subsection-title project-title">
+              <a href="https://ibb.co/mcQyhNr" title="Fabflix">Fabflix</a>
+            </h3>
+            <p class="short-info">
+              A Java EE web application with high scalability allowing customers to search and purchase over 20,000 movies with the response time under 500ms
+            </p>
+            <ul>
+              <li class="description-item">Synchronized the data between master and slave databases while creating two load balancers to distribute the network traffic and reduce the response time from above 400ms to 100-200ms</li>
+              <li class="description-item">Expanded the search functionality with full-text & fuzzy search, and autocomplete with client-side caching while keeping the endpoint’s response time around 80ms</li>
+              <li class="description-item">Optimized data processing time from 25 minutes to 3 minutes for parsing 3 large XML files totaling more than 70,000 entries with another team member using batch insert and a hash table for caching purposes</li>
+            </ul>
+          </div>
+          <div class="entry project-entry">
+            <h3 class="subsection-title project-title">
+              <a href="https://www.antcatalog.com" title="AntCatalog">AntCatalog</a>
+            </h3>
+            <p class="short-info">
+              A website enabling students in the University of California, Irvine to gain analytic insights on graduate courses starting from Fall 2013
+            </p>
+            <ul>
+              <li class="description-item">Applied the compression middleware to reduce the size of the largest payload from 5mb to 411kb</li>
+              <li class="description-item">Performed stress testing with Locust to ensure the durability of data as well as well as the service</li>
+              <li class="description-item">Programmed the rate limiting mechanism to allow maximum of 5 requests per second from the same source</li>
+              <li class="description-item">Configured the caching mechanism on the server to return the response under 100ms given the same request had been issued</li>
+            </ul>
+          </div>
+          <div class="entry project-entry">
+            <h3 class="subsection-title project-title">
+              <a href="https://github.com/imliuyzh/ics-search-engine" title="ICS Search Engine">ICS Search Engine</a>
+            </h3>
+            <p class="short-info">
+              A search engine written in Python that was able to handle thousands of webpages under a subset of the UCI ICS domain with the query response time below 300ms
+            </p>
+            <ul>
+              <li class="description-item">Ranked the relevance among seven thousand pages in low response time by coding custom cosine similarity algorithm with tf-idf weighting</li>
+              <li class="description-item">Parsed the text within webpages to store them into an inverted index distributed among various small index files</li>
+              <li class="description-item">Constructed the search engine with 3 students in 4 weeks</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section class="section" id="education">
         <h2>Education</h2>
-        <div class="entry-container-without-margin">
-          <div class="entry-info-container">
-            <h3 class="subsection-title">University of California, Irvine (UCI)</h3>
+        <div class="entries">
+          <div class="entry">
+            <div class="entry-info-container">
+              <h3 class="subsection-title">University of California, Irvine (UCI)</h3>
+  
+              <p class="short-info">M.C.S. Master of Computer Science · 4.00/4.00 (Cumulative)</p>
+              <p class="date">
+                <time datetime="2021-09">Fall 2021</time> - <time datetime="2022-12">Fall 2022</time>
+              </p>
+  
+              <br>
+  
+              <p class="short-info">B.S. Computer Science · 3.78/4.00 (Cumulative) · 3.86/4.00 (Major)</p>
+              <p class="date">
+                <time datetime="2017-09">Fall 2017</time> - <time datetime="2021-06">Spring 2021</time> (Cum Laude)
+              </p>
+            </div>
 
-            <p class="short-info">M.C.S. Master of Computer Science · 4.00/4.00 (Cumulative)</p>
-            <p class="date">Fall 2021 - Fall 2022</p>
-
-            <br>
-
-            <p class="short-info">B.S. Computer Science · 3.78/4.00 (Cumulative) · 3.86/4.00 (Major)</p>
-            <p class="date">Fall 2017 - Spring 2021 (Cum Laude)</p>
+            <div class="logo-container">
+              <img src="assets/images/uci-logo.png" alt="" class="logo" />
+            </div>
           </div>
-          <img src="assets/images/uci-logo.png" alt="" class="logo" />
         </div>
       </section>
 
       <section class="section" id="skills">
         <h2>Skills</h2>
         <div class="skills-container">
-          <div class="programming-skill">Python</div>
-          <div class="programming-skill">C++</div>
-          <div class="programming-skill">Java</div>
-          <div class="programming-skill">C</div>
-          <div class="programming-skill">HTML</div>
-          <div class="programming-skill">CSS</div>
-          <div class="programming-skill">JavaScript</div>
-          <div class="programming-skill">SQL</div>
-          <div class="programming-skill">TypeScript</div>
-          <div class="programming-skill">MIPS Assembly</div>
-          <div class="programming-skill">Common Lisp</div>
-          <div class="programming-skill">Prolog</div>
-          <div class="programming-skill">Git</div>
-          <div class="programming-skill">Vim</div>
-          <div class="programming-skill">Linux/Unix</div>
-          <div class="programming-skill">MySQL</div>
-          <div class="programming-skill">PostgreSQL</div>
-          <div class="programming-skill">Docker</div>
-          <div class="programming-skill">SQLite</div>
-          <div class="programming-skill">MongoDB</div>
-          <div class="programming-skill">React.js</div>
-          <div class="programming-skill">Angular</div>
-          <div class="programming-skill">jQuery</div>
-          <div class="programming-skill">Node.js</div>
-          <div class="programming-skill">Express.js</div>
           <div class="programming-skill">Amazon EC2</div>
+          <div class="programming-skill">Angular</div>
+          <div class="programming-skill">C</div>
+          <div class="programming-skill">C++</div>
+          <div class="programming-skill">Common Lisp</div>
+          <div class="programming-skill">CSS</div>
+          <div class="programming-skill">Docker</div>
+          <div class="programming-skill">Express.js</div>
+          <div class="programming-skill">Git</div>
           <div class="programming-skill">Google Compute Engine</div>
-          <div class="programming-skill">JUnit</div>
-          <div class="communication-skill">Mandarin</div>
-          <div class="communication-skill">Cantonese</div>
+          <div class="programming-skill">HTML</div>
+          <div class="programming-skill">Java</div>
+          <div class="programming-skill">JavaScript</div>
+          <div class="programming-skill">jQuery</div>
+          <div class="programming-skill">Linux/Unix</div>
+          <div class="programming-skill">MIPS Assembly</div>
+          <div class="programming-skill">MongoDB</div>
+          <div class="programming-skill">MySQL</div>
+          <div class="programming-skill">Node.js</div>
+          <div class="programming-skill">PostgreSQL</div>
+          <div class="programming-skill">Python</div>
+          <div class="programming-skill">React.js</div>
+          <div class="programming-skill">Redux</div>
+          <div class="programming-skill">SQL</div>
+          <div class="programming-skill">SQLite</div>
+          <div class="programming-skill">TypeScript</div>
+          <div class="programming-skill">x86 Assembly</div>
+          <div class="communication-skill">Chinese (Cantonese & Mandarin)</div>
         </div>
       </section>
 
       <section class="section" id="experience">
         <h2>Experience</h2>
-        <div class="entry-container-with-margin">
-          <div class="entry-info-container">
-            <h3 class="subsection-title">University of California, Irvine (UCI)</h3>
-            <p class="short-info">Student Lab Tutor · Volunteer</p>
-            <p class="date">Spring 2019 - Spring 2020 / Winter 2021</p>
-            <ul>
-              <li class="description-item">Engaged with more than 100 students on their class assignments through debugging and explaining the control flow of their programs</li>
-              <li class="description-item">Clarified students' confusion on difficult concepts under 5 minutes on average</li>
-              <li class="description-item">Reported to the faculty advisors about events during tutoring sessions and provided students' feedback on the course in weekly meetings</li>
-            </ul>
+        <div class="entries">
+          <div class="entry">
+            <div class="entry-info-container">
+              <h3 class="subsection-title">Numecent</h3>
+              <p class="short-info">Software Engineer · Internship</p>
+              <p class="date">
+                <time datetime="2022-01">January 2022</time> - <time datetime="2022-05">May 2022</time>
+              </p>
+              <ul>
+                <li class="description-item">Dockerized the customer tracking portal by building, configuring, and orchestrating several Windows containers, streamlining the deployment pipeline and minimizing configuration issues for the DevOps team</li>
+                <li class="description-item">Replaced a legacy C++ product key generator with a new PowerShell script for the customer tracking service, shortening the feature delivery lifecycle from a week and half to four days</li>
+                <li class="description-item">Leveraged knowledge in MEAN stack (MongoDB, Express.js, AngularJS, and Node.js) to perform customer tracking portal maintenance</li>
+              </ul>
+            </div>
 
-            <p class="short-info">Reader · Seasonal</p>
-            <p class="date">Fall 2020</p>
-            <ul>
-              <li class="description-item">Created reusable test cases to grade weekly assignments from over 200 students in a week</li>
-              <li class="description-item">Held meetings over 10 weeks to respond to students' questions on assignment grading</li>
-              <li class="description-item">Assisted the instructor on the method of evaluation for the final assignment using the Swing framework</li>
-            </ul>
+            <div class="logo-container">
+              <img src="assets/images/numecent-logo.png" alt="" class="logo" />
+            </div>
+          </div>
+          <div class="entry">
+            <div class="entry-info-container">
+              <h3 class="subsection-title">University of California, Irvine (UCI)</h3>
+              <p class="short-info">Student Lab Tutor · Volunteer</p>
+              <p class="date">
+                <time datetime="2019-03">Spring 2019</time> - <time datetime="2020-06">Spring 2020</time>
+                  /
+                <time datetime="2021-01">Winter 2021</time>
+              </p>
+              <ul>
+                <li class="description-item">Engaged with more than 100 students on their class assignments through debugging and explaining the control flow of their programs</li>
+                <li class="description-item">Clarified students' confusion on difficult concepts under 5 minutes on average</li>
+                <li class="description-item">Reported to the faculty advisors about events during tutoring sessions and provided students' feedback on the course in weekly meetings</li>
+              </ul>
 
-            <p class="short-info">Project Committee Developer · Volunteer</p>
-            <p class="date">Fall 2019 - Summer 2020</p>
-            <ul>
-              <li class="description-item">Collaborated with over 10 developers on PeterPortal enabling students to view information for over 5000 classes and their grade distribution since Fall 2014</li>
-              <li class="description-item">Reported current status for the assigned team to the head of the project committee during weekly meetings</li>
-              <li class="description-item">Organized 3 learning activities enabling students to gain experience on common
-development tools such as Git</li>
-            </ul>
-          </div>
+              <p class="short-info">Reader · Seasonal</p>
+              <p class="date">
+                Fall 2020 (<time datetime="2020-09">September 2020</time> - <time datetime="2020-12">December 2020</time>)
+              </p>
+              <ul>
+                <li class="description-item">Created reusable test cases to grade weekly assignments from over 200 students in a week</li>
+                <li class="description-item">Assisted the instructor on the method of evaluation for the final assignment using the Swing framework</li>
+              </ul>
 
-          <div id="logo-container">
-            <img src="assets/images/uci-logo.png" alt="" class="logo" />
-            <img src="assets/images/icssc-logo.png" alt="" class="logo" />
+              <p class="short-info">Project Committee Developer · Volunteer</p>
+              <p class="date">
+                <time datetime="2019-09">September 2019</time> - <time datetime="2020-07">July 2020</time>
+              </p>
+              <ul>
+                <li class="description-item">Collaborated with over 10 developers on PeterPortal enabling students to view information for over 5000 classes and their grade distribution since Fall 2014</li>
+                <li class="description-item">Reported current status for the assigned team to the head of the project committee during weekly meetings</li>
+                <li class="description-item">Organized 3 learning activities enabling students to gain experience on common development tools such as Git</li>
+              </ul>
+            </div>
+
+            <div class="logo-container">
+              <img src="assets/images/uci-logo.png" alt="" class="logo" />
+              <img src="assets/images/icssc-logo.png" alt="" class="logo" />
+            </div>
           </div>
-        </div>
-        <div class="entry-container-with-margin">
-          <div class="entry-info-container">
-            <h3 class="subsection-title">Ardent Academy for Gifted Youth</h3>
-            <p class="short-info">Software Developer · Internship</p>
-            <p class="date">July 2020 - September 2020</p>
-            <ul>
-              <li class="description-item">Developed a whiteboard application with HTML, CSS, and JavaScript in response for drafting needs among students who enrolled in the math program</li>
-              <li class="description-item">Renovated the front-end of Ardent Labs’ website with in-demand industrial web development tools such as React.js and NPM</li>
-              <li class="description-item">Produced a prototype for an internal messaging application with the MERN stack for individual conversation between students and teaching staff members</li>
-            </ul>
+          <div class="entry">
+            <div class="entry-info-container">
+              <h3 class="subsection-title">Ardent Academy for Gifted Youth</h3>
+              <p class="short-info">Software Engineer · Internship</p>
+              <p class="date">
+                <time datetime="2020-07">July 2020</time> - <time datetime="2022-09">September 2020</time>
+              </p>
+              <ul>
+                <li class="description-item">Developed a whiteboard application with HTML, CSS, and JavaScript in response for drafting needs among students who enrolled in the math program</li>
+                <li class="description-item">Renovated the front-end of Ardent Labs' website with in-demand industrial web development tools such as React.js and NPM</li>
+                <li class="description-item">Produced a prototype for an internal messaging application with the MERN stack for individual conversation between students and teaching staff members</li>
+              </ul>
+            </div>
+
+            <div class="logo-container">
+              <img src="assets/images/ardent-logo.png" alt="" class="logo" />
+            </div>
           </div>
-          <img src="assets/images/ardent-logo.png" alt="" class="logo" />
         </div>
       </section>
 
       <aside>
-        <a href="#" id="jump-to-top">
+        <a href="#" id="jump-to-top" title="Jump to Top">
           <span class="las la-angle-up" id="jump-to-top-button" aria-hidden="true"></span>
         </a>
       </aside>
     </main>
 
     <footer>
-      <a href="mailto:imliuyzh@outlook.com">
+      <a href="mailto:imliuyzh@outlook.com" title="Email">
         <span class="lar la-envelope" aria-hidden="true"></span>
       </a>
 
-      <a href="https://github.com/imliuyzh">
+      <a href="https://github.com/imliuyzh" title="GitHub">
         <span class="lab la-github" aria-hidden="true"></span>
       </a>
 
-      <a href="https://www.linkedin.com/in/yizhenliu/">
+      <a href="https://www.linkedin.com/in/yizhenliu/" title="LinkedIn">
         <span class="lab la-linkedin-in" aria-hidden="true"></span>
       </a>
 
-      <a href="assets/media/resume.pdf">
+      <a href="assets/media/resume.pdf" title="Résumé">
         <span class="lar la-id-badge" aria-hidden="true"></span>
       </a>
     </footer>
