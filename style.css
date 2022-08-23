@@ -98,6 +98,11 @@ a:hover
     vertical-align: middle;
 }
 
+.header-links
+{
+    color: #afafaf;
+}
+
 .header-icons
 {
     font-size: 18px;
