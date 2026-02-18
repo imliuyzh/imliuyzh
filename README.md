@@ -5,5 +5,5 @@ I am currently a software engineer at Motorola Solutions working under the Core 
 
 An interesting thing about me is that C# is the first programming language that I used.
 
-![Statistics](https://github-readme-stats.vercel.app/api?username=imliuyzh&show_icons=true)
-![Programming Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=imliuyzh&layout=compact)
+![Statistics](https://github-stats-extended.vercel.app/api?username=imliuyzh&show_icons=true)
+![Programming Languages](https://github-stats-extended.vercel.app/api/top-langs/?username=imliuyzh&layout=compact)
